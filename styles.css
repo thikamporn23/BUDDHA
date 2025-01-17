@@ -1,0 +1,280 @@
+*{
+    /* การกำหนด font */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  
+    /* กำหนด link style */
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    transition: 0.55;
+
+}
+
+/* menu */
+        .container{
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+
+        nav{
+            background-color: rgba(125, 190, 136, 0.877);
+            overflow: hidden;
+        }
+
+        .nav-con{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            margin-left: 10px;
+            padding: 14px 16px;
+        }
+
+        .menu{
+            display: flex;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .menu:hover{
+            transform: scale(1.1);
+        }
+
+        .menu li{
+            float: left;
+            color: rgb(201, 243, 207);
+            list-style: none;
+            margin-left: 10px;
+            padding: 14px 16px;
+            transition: 0.5s;
+        }
+
+        .menu li:hover{
+            transform: scale(1.2);
+        }
+
+        .menu a:active{
+            background-color: rgb(92, 155, 108);
+            text-decoration: none;
+        }
+
+        a{
+            color: rgb(29, 90, 39);
+        }
+
+        .logo{
+            font-size: 30px;
+            
+        }
+
+        /* dropdownmenu */
+        /* navbar-container */
+        .navbar{
+            overflow: hidden;
+            background-color: rgb(108, 150, 115);
+            /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+        }
+
+        /* link inside navbar */
+        .navbar a{
+            float: left;
+            font-size: 14px;
+            color: rgb(59, 95, 61);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* dropdown-container */
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+
+        /* dropdown-btn */
+        .dropdown .dropbtn{
+            font-size: 14px;
+            border: none;
+            outline: none;
+            color: rgb(50, 85, 47);
+            padding: 14px 16px;
+            background-color: inherit;
+            margin: 0;
+        }
+
+        .nav-bar a:hover, .dropdown:hover .dropbtn{
+            background-color: rgb(115, 156, 91);
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: rgb(188, 224, 188);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgb(180, 245, 171);
+            z-index: 1;
+        }
+
+        /* link inside dropdown */
+        .dropdown-content a{
+            float: none;
+            color: rgb(95, 136, 87);
+            padding: 14px 16px;
+            text-decoration: rgb(72, 161, 64);
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover{
+            background-color: rgb(241, 223, 200);
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+
+
+
+
+    /* table style */
+    .styled-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    }
+        /* ตกแต่งส่วนหัวของตางราง */
+        .styled-table th{
+        background-color: rgb(245, 182, 182); /* สีพื้นหลังของหัวข้อ */
+        color: rgb(97, 92, 92);  /* สีของตัวอักษรหัวข้อ */
+        text-align: center;  /* ตำแหน่งของตัวอักษรให้อยู่ตรงกลาง */
+        padding:  12px 15px;  /* เพิ่ม padding ด้านในหัวข้อ */
+        font-size: 16px ;  /* ขนาดของตัวอัษร */
+        }
+
+        /* ตกแต่งแถวของตาราง */
+        .styled-table td{ 
+        text-align: center;  
+        padding: 12px 18px ; 
+        border-collapse: collapse ; 
+        border-bottom: 1px rgb(104, 133, 84); 
+        } 
+
+        /* เปลี่ยนเมื่อวางเม้าส์ */
+        .styled-table tr :hover{
+        background-color: rgb(224, 203, 248);
+        }
+
+        /* เพิ่มเส้นขอบตาราง */
+        .styled-table , .styled-table th , .styled-table td{
+        border: 1px solid rgb(114, 116, 114);   
+        }
+
+        /* profile */
+        .title {
+            justify-content: center;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .title H1 {
+            color: rgb(85, 107, 110);
+        }
+
+        .title p {
+            color: rgb(86, 111, 112);
+        }
+        
+        .picture {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            
+        }
+        
+        .pich-item {
+            max-width: 1140px;
+            justify-content: center;
+            text-align: center;
+            
+        }
+
+        .pich-item img {
+            width: 300;
+            border-radius: 100%;
+            box-shadow: 0 0 30px rgb(29, 77, 23);
+            align-items: center;
+            transition: 0.5s;
+            
+        }
+
+        .pic-info img:hover{
+            transform: scale(1.1);
+        }
+
+        .pich-item p {
+            font-size: 20px;
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+            color: rgb(46, 88, 49);
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            border: 1px rgb(255, 255, 255) solid;
+            max-width: 1140px;
+            margin: 0 auto;
+            column-gap: 16px;
+        }
+
+        .content-item1 {
+            border: 1px rgb(49, 77, 38) solid;
+            padding: 12px;
+            background-color: rgb(176, 245, 187);
+            color: rgb(68, 53, 53);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px 0 ;
+            transition: 0.5s;
+            }
+
+        .content-item1:hover{
+            transform: scale(1.1);
+            }
+        .content-item2 {
+            border: 1px rgb(49, 77, 38) solid;
+            padding: 12px;
+            background-color: rgb(176, 245, 187);
+            color: rgb(68, 53, 53);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px 0 ;
+            transition: 0.5s;
+            }
+
+        .content-item2:hover{
+            transform: scale(1.1);
+            }
+        .content-item3 {
+            border: 1px rgb(49, 77, 38) solid;
+            padding: 12px;
+            background-color: rgb(176, 245, 187);
+            color: rgb(68, 53, 53);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px 0 ;
+            transition: 0.5s;
+            }
+
+        .content-item3:hover{
+            transform: scale(1.1);
+            }
+        
+
+        .content-item h3 {
+            display: grid;
+            text-align: center;
+            background-color: rgb(134, 240, 152);
+            color: rgb(0, 107, 48);
+            
+        }
+
+        
