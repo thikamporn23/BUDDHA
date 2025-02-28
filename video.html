@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-U4-compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- JavaScript audio play -->
+
+    <script type="text/javaScript">
+        function Playsong() {
+          let au = document.getElementById("audio1");
+          au.play();
+        }
+
+        function Pausesong() {
+          let au = document.getElementById("audio1");
+          au.pause();
+        }
+
+
+    </script>
+
+</head>
+<body align ="center">
+    <div></div>
+     <p><h1>การแทรกวิดีโอ</h1></p>
+     <video src="media/video1.mp4" width="960" height="540" controls="controls"></video>
+     </div>
+     <br>
+
+    <!-- การแทรกวิดีโอจาก youtube -->
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ekr2nIex040?si=KzIjYoknSyMP2yz_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l4dIr_BsXGI?si=7nev5TPdTG0Lv9b5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+        
+    <!-- การแทรก audio -->
+    <div>
+        <p><h1>การแทรก audio</h1></p>
+        <button onclick="Playsong();">Play</button>
+        <button onclick="Pausesong();">Stop</button>
+        <audio src="media/rose.mp3" id="audio1" controls ="controls"></audio>
+    </div>
+</body>
+</html>
